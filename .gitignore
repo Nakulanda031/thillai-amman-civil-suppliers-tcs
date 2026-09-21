@@ -1,0 +1,12 @@
+# dependencies
+node_modules/
+
+# environment secrets — never commit real credentials
+.env
+
+# uploaded customer files
+backend/uploads/
+
+# OS / editor
+.DS_Store
+Thumbs.db
