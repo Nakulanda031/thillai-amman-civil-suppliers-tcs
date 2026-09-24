@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 380" width="100%" height="100%">
+    <defs>
+      <linearGradient id="eqBg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0F172A" />
+        <stop offset="100%" stop-color="#020617" />
+      </linearGradient>
+    </defs>
+    <!-- Background -->
+    <rect width="540" height="380" rx="16" fill="url(#eqBg)"/>
+    <rect x="2" y="2" width="536" height="376" rx="14" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+
+    <!-- Grid Backdrop -->
+    <path d="M0 60 H540 M0 120 H540 M0 180 H540 M0 240 H540 M0 300 H540" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+    
+    <!-- Top Capacity Pill -->
+    <rect x="32" y="28" width="220" height="28" rx="6" fill="rgba(56,189,248,0.12)" stroke="rgba(56,189,248,0.3)" stroke-width="1"/>
+    <text x="142" y="46" font-family="'Montserrat', sans-serif" font-weight="700" font-size="10.5" fill="#38BDF8" text-anchor="middle" letter-spacing="1">6-WHEEL / 10-WHEEL HEAVY HAULAGE</text>
+
+    <!-- Machinery Illustration -->
+    <g transform="translate(100, 110)">
+      <!-- Truck Cabin -->
+      <path d="M190 80 L230 80 L250 110 L250 150 L190 150 Z" fill="#0284C7" stroke="#38BDF8" stroke-width="2"/>
+      <path d="M205 90 L228 90 L242 110 L205 110 Z" fill="#0A1622"/>
+      <!-- Tipper Bed Raised -->
+      <polygon points="20,130 180,90 175,150 20,150" fill="#334155" stroke="#64748B" stroke-width="2"/>
+      <!-- Hydraulic Ram -->
+      <line x1="90" y1="150" x2="110" y2="120" stroke="#F59E0B" stroke-width="5" stroke-linecap="round"/>
+      <!-- Chassis -->
+      <rect x="15" y="150" width="235" height="14" fill="#0F172A"/>
+      <!-- Wheels -->
+      <circle cx="55" cy="172" r="22" fill="#1E293B" stroke="#64748B" stroke-width="3"/>
+      <circle cx="55" cy="172" r="10" fill="#475569"/>
+      <circle cx="115" cy="172" r="22" fill="#1E293B" stroke="#64748B" stroke-width="3"/>
+      <circle cx="115" cy="172" r="10" fill="#475569"/>
+      <circle cx="215" cy="172" r="22" fill="#1E293B" stroke="#64748B" stroke-width="3"/>
+      <circle cx="215" cy="172" r="10" fill="#475569"/>
+    </g>
+
+    <!-- Ground Level -->
+    <line x1="40" y1="305" x2="500" y2="305" stroke="rgba(255,255,255,0.15)" stroke-width="2" stroke-dasharray="6 6"/>
+
+    <!-- Footer Overlay -->
+    <rect x="24" y="316" width="492" height="48" rx="8" fill="rgba(15,23,42,0.9)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="40" y="345" font-family="'Poppins', sans-serif" font-weight="700" font-size="14" fill="#FFFFFF">ASHOK LEYLAND TIPPER</text>
+    <text x="500" y="345" font-family="'Montserrat', sans-serif" font-weight="600" font-size="11.5" fill="#10B981" text-anchor="end">● AVAILABLE IN COIMBATORE</text>
+  </svg>

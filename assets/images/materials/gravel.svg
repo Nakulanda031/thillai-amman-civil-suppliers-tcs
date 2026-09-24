@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 360" width="100%" height="100%">
+    <defs>
+      <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0E1E2E" />
+        <stop offset="100%" stop-color="#071018" />
+      </linearGradient>
+      <linearGradient id="matGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#A06C3E" />
+        <stop offset="100%" stop-color="#6B421E" />
+      </linearGradient>
+    </defs>
+    <!-- Background Card -->
+    <rect width="500" height="360" fill="url(#bgGrad)"/>
+    
+    <!-- Industrial Grid Texture -->
+    <path d="M0 60 H500 M0 120 H500 M0 180 H500 M0 240 H500 M0 300 H500" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    <path d="M100 0 V360 M200 0 V360 M300 0 V360 M400 0 V360" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    
+    <!-- Strata Accent Strip Top -->
+    <rect x="0" y="0" width="500" height="6" fill="#A06C3E"/>
+
+    <!-- Category Badge -->
+    <rect x="28" y="24" width="170" height="26" rx="6" fill="rgba(56,189,248,0.12)" stroke="rgba(56,189,248,0.3)" stroke-width="1"/>
+    <text x="113" y="41" font-family="'Montserrat', sans-serif" font-weight="700" font-size="10.5" fill="#38BDF8" text-anchor="middle" letter-spacing="1.5">SUB-BASE ROAD FILL</text>
+
+    <!-- Visual Icon Representation -->
+    <g transform="translate(0, 10)">
+      <path d="M120 280 C180 210, 260 210, 360 280 Z" fill="#B88251" opacity="0.9"/>
+           <ellipse cx="250" cy="275" rx="160" ry="30" fill="#6B421E"/>
+    </g>
+
+    <!-- Title & Subtitle Card Overlay -->
+    <rect x="20" y="275" width="460" height="70" rx="12" fill="rgba(10,22,34,0.92)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="36" y="303" font-family="'Poppins', sans-serif" font-weight="700" font-size="15" fill="#FFFFFF">GRAVEL / SUB-BASE FILLER</text>
+    <text x="36" y="327" font-family="'Inter', sans-serif" font-weight="500" font-size="12" fill="#94A3B8">High Compaction Natural Earth Gravel</text>
+    
+    <!-- Direct Supply Tag -->
+    <circle cx="445" cy="310" r="14" fill="#A06C3E" opacity="0.2"/>
+    <path d="M440 310 L444 314 L452 306" stroke="#A06C3E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  </svg>

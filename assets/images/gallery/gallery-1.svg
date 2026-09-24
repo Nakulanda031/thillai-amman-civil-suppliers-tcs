@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+    <defs>
+      <linearGradient id="gBg0" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#142B41" />
+        <stop offset="100%" stop-color="#0A1622" />
+      </linearGradient>
+    </defs>
+    <rect width="600" height="450" rx="16" fill="url(#gBg0)"/>
+    <rect x="2" y="2" width="596" height="446" rx="14" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    
+    <!-- Industrial Diagonal Strata Lines -->
+    <path d="M0 450 L450 0 M100 450 L550 0 M200 450 L650 0" stroke="rgba(56,189,248,0.06)" stroke-width="3"/>
+    
+    <!-- Central Icon/Symbol -->
+    <circle cx="300" cy="200" r="70" fill="rgba(56,189,248,0.08)" stroke="rgba(56,189,248,0.2)" stroke-width="2"/>
+    <text x="300" y="210" font-family="'Poppins', sans-serif" font-weight="900" font-size="32" fill="#38BDF8" text-anchor="middle">TCS</text>
+
+    <!-- Category Pill -->
+    <rect x="36" y="32" width="130" height="26" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="101" y="49" font-family="'Montserrat', sans-serif" font-weight="700" font-size="11" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">MATERIALS</text>
+
+    <!-- Overlay Caption -->
+    <rect x="24" y="356" width="552" height="70" rx="10" fill="rgba(8,18,29,0.92)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="44" y="390" font-family="'Poppins', sans-serif" font-weight="700" font-size="16" fill="#FFFFFF">High Grade M-Sand Stockyard</text>
+    <text x="44" y="412" font-family="'Inter', sans-serif" font-weight="500" font-size="12" fill="#94A3B8">Thillai Amman Civil Suppliers · Coimbatore</text>
+  </svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="skyGradFav" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0A1622" />
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="url(#skyGradFav)" stroke-width="2" />
+  <!-- Strata lines -->
+  <rect x="14" y="14" width="36" height="4" rx="2" fill="#D97706" />
+  <rect x="14" y="21" width="36" height="4" rx="2" fill="#38BDF8" />
+  <text x="32" y="47" font-family="'Poppins', sans-serif" font-weight="900" font-size="22" fill="#FFFFFF" text-anchor="middle">TCS</text>
+</svg>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nakulanda031.github.io/thillai-amman-civil-suppliers-tcs/sitemap.xml
