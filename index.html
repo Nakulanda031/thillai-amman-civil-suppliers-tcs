@@ -208,9 +208,31 @@
   .stat-num span.suffix{color:var(--sky);}
   .stat-label{color:rgba(255,255,255,0.55);font-size:12.5px;margin-top:6px;letter-spacing:0.02em;}
   .stat-item::after{
-    content:'';position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--sky);transition:width .5s ease;
+    content:'';position:absolute;left:0;bottom:0;height:4px;width:0;
+    transition:width 0.85s cubic-bezier(0.16, 1, 0.3, 1), height 0.3s ease;
   }
-  .stat-item:hover::after{width:100%;}
+  .stat-item:nth-child(1)::after{
+    background:linear-gradient(90deg, var(--sand), var(--sand-deep));
+    box-shadow:0 0 12px rgba(200,155,108,0.55);
+    transition-delay:0.1s;
+  }
+  .stat-item:nth-child(2)::after{
+    background:linear-gradient(90deg, var(--sky), var(--sky-deep));
+    box-shadow:0 0 12px rgba(41,182,246,0.55);
+    transition-delay:0.25s;
+  }
+  .stat-item:nth-child(3)::after{
+    background:linear-gradient(90deg, var(--stone), #4E5A63);
+    box-shadow:0 0 12px rgba(110,123,133,0.55);
+    transition-delay:0.4s;
+  }
+  .stat-item:nth-child(4)::after{
+    background:linear-gradient(90deg, var(--emerald), #1E8449);
+    box-shadow:0 0 12px rgba(46,204,113,0.55);
+    transition-delay:0.55s;
+  }
+  .stats-grid.counted .stat-item::after{width:100%;}
+  .stat-item:hover::after{width:100%;height:5px;}
 
   /* section base */
   section{padding:110px 0;}
@@ -298,10 +320,16 @@
   .reviews-section{background:linear-gradient(180deg,#F7FAFC,#fff);}
   .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px;}
   .review-card{
-    background:#fff;border:1px solid #EAEFF3;border-radius:20px;padding:30px;position:relative;
-    transition:transform .25s ease, box-shadow .25s ease;
+    background:#fff;border:1px solid #EAEFF3;border-radius:20px;padding:34px 28px 28px;position:relative;
+    transition:transform .25s ease, box-shadow .25s ease;overflow:hidden;
   }
-  .review-card:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(13,27,42,0.1);}
+  .review-card::before{
+    content:'';position:absolute;top:0;left:0;right:0;height:4px;
+  }
+  .review-card:nth-child(1)::before{background:linear-gradient(90deg, var(--sky), var(--sky-deep));}
+  .review-card:nth-child(2)::before{background:linear-gradient(90deg, var(--sand), var(--sand-deep));}
+  .review-card:nth-child(3)::before{background:linear-gradient(90deg, var(--emerald), var(--sky));}
+  .review-card:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(13,27,42,0.1);border-color:transparent;}
   .review-quote-mark{
     position:absolute;top:22px;right:26px;font-family:'Poppins',sans-serif;font-size:52px;font-weight:800;
     color:rgba(41,182,246,0.12);line-height:1;
@@ -920,6 +948,8 @@
   function runCounters(){
     if(counted) return;
     counted = true;
+    const statsGridEl = document.querySelector('.stats-grid');
+    if(statsGridEl) statsGridEl.classList.add('counted');
     counters.forEach(el => {
       const target = parseInt(el.getAttribute('data-count'), 10);
       const suffixEl = el.querySelector('.suffix');
